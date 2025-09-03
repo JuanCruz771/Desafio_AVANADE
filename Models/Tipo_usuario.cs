@@ -1,0 +1,10 @@
+﻿namespace Desafio_e_commerce_AVANADE_Estoque.Models
+{
+    public enum Tipo_usuario
+    {
+        Admin,
+        vendedor,
+        Estoquista 
+
+    }
+}
