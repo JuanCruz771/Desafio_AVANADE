@@ -1,10 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>Desafio_e_commerce_AVANADE_Estoque</RootNamespace>
+    <UserSecretsId>6574f327-7ebb-4446-bfcd-6163552bbf95</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
