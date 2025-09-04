@@ -2,9 +2,9 @@
 {
     public enum Tipo_usuario
     {
-        Admin,
-        vendedor,
-        Estoquista 
+        Admin = 1,
+        comprador = 2,
+        Vendedor = 3
 
     }
 }

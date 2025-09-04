@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Desafio_e_commerce_AVANADE_Estoque.Models;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
@@ -6,13 +7,13 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Desafio_e_commerce_AVANADE_Estoque.Migrations
 {
     /// <inheritdoc />
-    public partial class Tabelas_Estoque : Migration
+    public partial class Tabelas : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AlterDatabase()
-                .Annotation("Npgsql:Enum:tipo_usuario", "admin,estoquista,vendedor");
+                .Annotation("Npgsql:Enum:tipo_usuario", "admin,comprador,vendedor");
 
             migrationBuilder.CreateTable(
                 name: "Produtos",
@@ -39,7 +40,7 @@ namespace Desafio_e_commerce_AVANADE_Estoque.Migrations
                     Nome = table.Column<string>(type: "text", nullable: true),
                     Senha = table.Column<string>(type: "text", nullable: true),
                     Email = table.Column<string>(type: "text", nullable: true),
-                    Tipo = table.Column<string>(type: "text", nullable: false)
+                    Tipo = table.Column<Tipo_usuario>(type: "tipo_usuario", nullable: false)
                 },
                 constraints: table =>
                 {
