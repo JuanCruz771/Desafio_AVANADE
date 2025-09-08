@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YYXV5sWCngE=",
+  "dgSpecHash": "zR1TIrxkZro=",
   "success": true,
-  "projectFilePath": "D:\\Projetos\\DIO\\Desafio_AVANADE\\API_Vendas\\Desafio_e-commerce_AVANADE_Vendas\\Desafio_e-commerce_AVANADE_Vendas.csproj",
+  "projectFilePath": "D:\\Projetos\\DIO\\Desafio_AVANADE\\API_Vendas\\Desafio_e-commerce_AVANADE_Vendas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JUAN\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\JUAN\\.nuget\\packages\\jwt\\11.0.0\\jwt.11.0.0.nupkg.sha512",

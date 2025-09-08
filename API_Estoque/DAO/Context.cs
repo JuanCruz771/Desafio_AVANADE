@@ -9,7 +9,7 @@ namespace Desafio_e_commerce_AVANADE_Estoque.DAO
     {
         public Context(DbContextOptions<Context> options) : base(options) { }
         public DbSet<Estoque_Produtos> Produtos { get; set; }
-        public DbSet<Cadastro_Usuario> Usuarios { get; set; }
+        
 
         
     }

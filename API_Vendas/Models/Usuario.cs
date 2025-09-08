@@ -5,10 +5,19 @@ namespace Desafio_e_commerce_AVANADE_Vendas.Models
     public class Usuario
     {
         [Key]
-        public int id { get; set; }
+        public int Id { get; set; }
         public string? Nome { get; set; }
-        public string? Senha { get; set; }
+        public string? Cpf { get; set; }
+        public string? Genero { get; set; }
+        public DateTime Data_Nascimento { get; set; }
+        public string? Celular { get; set; }
         public string? Email { get; set; }
+        public string? Senha { get; set; }
+        public string? Endereço { get; set; }
         public Tipo_Usuario Tipo { get; set; }
+
+        // Navegação reversa
+        public ICollection<Registro_Vendas> VendasComoComprador { get; set; }
+        public ICollection<Registro_Vendas> VendasComoVendedor { get; set; }
     }
 }

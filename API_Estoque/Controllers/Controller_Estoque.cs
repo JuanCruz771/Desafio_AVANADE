@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Desafio_e_commerce_AVANADE_Estoque.Controllers
 {
     [Authorize]
+    
     [ApiController]
     [Route("/Estoque")]
     public class Controller_Estoque : ControllerBase

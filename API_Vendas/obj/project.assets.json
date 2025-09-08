@@ -3771,11 +3771,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projetos\\DIO\\Desafio_AVANADE\\API_Vendas\\Desafio_e-commerce_AVANADE_Vendas\\Desafio_e-commerce_AVANADE_Vendas.csproj",
+      "projectUniqueName": "D:\\Projetos\\DIO\\Desafio_AVANADE\\API_Vendas\\Desafio_e-commerce_AVANADE_Vendas.csproj",
       "projectName": "Desafio_e-commerce_AVANADE_Vendas",
-      "projectPath": "D:\\Projetos\\DIO\\Desafio_AVANADE\\API_Vendas\\Desafio_e-commerce_AVANADE_Vendas\\Desafio_e-commerce_AVANADE_Vendas.csproj",
+      "projectPath": "D:\\Projetos\\DIO\\Desafio_AVANADE\\API_Vendas\\Desafio_e-commerce_AVANADE_Vendas.csproj",
       "packagesPath": "C:\\Users\\JUAN\\.nuget\\packages\\",
-      "outputPath": "D:\\Projetos\\DIO\\Desafio_AVANADE\\API_Vendas\\Desafio_e-commerce_AVANADE_Vendas\\obj\\",
+      "outputPath": "D:\\Projetos\\DIO\\Desafio_AVANADE\\API_Vendas\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

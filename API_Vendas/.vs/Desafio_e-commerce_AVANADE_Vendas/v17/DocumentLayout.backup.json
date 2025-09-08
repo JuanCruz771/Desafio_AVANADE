@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projetos\\DIO\\Desafio_AVANADE\\API_Vendas\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E8CE494A-EE22-448C-922A-A3E8E30644DB}|Desafio_e-commerce_AVANADE_Vendas.csproj|d:\\projetos\\dio\\desafio_avanade\\api_vendas\\models\\registro_vendas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8CE494A-EE22-448C-922A-A3E8E30644DB}|Desafio_e-commerce_AVANADE_Vendas.csproj|solutionrelative:models\\registro_vendas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8CE494A-EE22-448C-922A-A3E8E30644DB}|Desafio_e-commerce_AVANADE_Vendas.csproj|d:\\projetos\\dio\\desafio_avanade\\api_vendas\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8CE494A-EE22-448C-922A-A3E8E30644DB}|Desafio_e-commerce_AVANADE_Vendas.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8CE494A-EE22-448C-922A-A3E8E30644DB}|Desafio_e-commerce_AVANADE_Vendas.csproj|d:\\projetos\\dio\\desafio_avanade\\api_vendas\\controllers\\controller_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8CE494A-EE22-448C-922A-A3E8E30644DB}|Desafio_e-commerce_AVANADE_Vendas.csproj|solutionrelative:controllers\\controller_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8CE494A-EE22-448C-922A-A3E8E30644DB}|Desafio_e-commerce_AVANADE_Vendas.csproj|d:\\projetos\\dio\\desafio_avanade\\api_vendas\\dao\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8CE494A-EE22-448C-922A-A3E8E30644DB}|Desafio_e-commerce_AVANADE_Vendas.csproj|solutionrelative:dao\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8CE494A-EE22-448C-922A-A3E8E30644DB}|Desafio_e-commerce_AVANADE_Vendas.csproj|d:\\projetos\\dio\\desafio_avanade\\api_vendas\\models\\tipo_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8CE494A-EE22-448C-922A-A3E8E30644DB}|Desafio_e-commerce_AVANADE_Vendas.csproj|solutionrelative:models\\tipo_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8CE494A-EE22-448C-922A-A3E8E30644DB}|Desafio_e-commerce_AVANADE_Vendas.csproj|d:\\projetos\\dio\\desafio_avanade\\api_vendas\\models\\status_venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8CE494A-EE22-448C-922A-A3E8E30644DB}|Desafio_e-commerce_AVANADE_Vendas.csproj|solutionrelative:models\\status_venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8CE494A-EE22-448C-922A-A3E8E30644DB}|Desafio_e-commerce_AVANADE_Vendas.csproj|d:\\projetos\\dio\\desafio_avanade\\api_vendas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8CE494A-EE22-448C-922A-A3E8E30644DB}|Desafio_e-commerce_AVANADE_Vendas.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8CE494A-EE22-448C-922A-A3E8E30644DB}|Desafio_e-commerce_AVANADE_Vendas.csproj|d:\\projetos\\dio\\desafio_avanade\\api_vendas\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E8CE494A-EE22-448C-922A-A3E8E30644DB}|Desafio_e-commerce_AVANADE_Vendas.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Status_Venda.cs",
+              "DocumentMoniker": "D:\\Projetos\\DIO\\Desafio_AVANADE\\API_Vendas\\Models\\Status_Venda.cs",
+              "RelativeDocumentMoniker": "Models\\Status_Venda.cs",
+              "ToolTip": "D:\\Projetos\\DIO\\Desafio_AVANADE\\API_Vendas\\Models\\Status_Venda.cs",
+              "RelativeToolTip": "Models\\Status_Venda.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T22:34:39.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "D:\\Projetos\\DIO\\Desafio_AVANADE\\API_Vendas\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "Models\\Usuario.cs",
+              "ToolTip": "D:\\Projetos\\DIO\\Desafio_AVANADE\\API_Vendas\\Models\\Usuario.cs",
+              "RelativeToolTip": "Models\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T22:31:59.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Registro_Vendas.cs",
+              "DocumentMoniker": "D:\\Projetos\\DIO\\Desafio_AVANADE\\API_Vendas\\Models\\Registro_Vendas.cs",
+              "RelativeDocumentMoniker": "Models\\Registro_Vendas.cs",
+              "ToolTip": "D:\\Projetos\\DIO\\Desafio_AVANADE\\API_Vendas\\Models\\Registro_Vendas.cs",
+              "RelativeToolTip": "Models\\Registro_Vendas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T22:20:42.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Tipo_Usuario.cs",
+              "DocumentMoniker": "D:\\Projetos\\DIO\\Desafio_AVANADE\\API_Vendas\\Models\\Tipo_Usuario.cs",
+              "RelativeDocumentMoniker": "Models\\Tipo_Usuario.cs",
+              "ToolTip": "D:\\Projetos\\DIO\\Desafio_AVANADE\\API_Vendas\\Models\\Tipo_Usuario.cs",
+              "RelativeToolTip": "Models\\Tipo_Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T22:20:17.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Context.cs",
+              "DocumentMoniker": "D:\\Projetos\\DIO\\Desafio_AVANADE\\API_Vendas\\DAO\\Context.cs",
+              "RelativeDocumentMoniker": "DAO\\Context.cs",
+              "ToolTip": "D:\\Projetos\\DIO\\Desafio_AVANADE\\API_Vendas\\DAO\\Context.cs",
+              "RelativeToolTip": "DAO\\Context.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T21:41:35.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Controller_Usuario.cs",
+              "DocumentMoniker": "D:\\Projetos\\DIO\\Desafio_AVANADE\\API_Vendas\\Controllers\\Controller_Usuario.cs",
+              "RelativeDocumentMoniker": "Controllers\\Controller_Usuario.cs",
+              "ToolTip": "D:\\Projetos\\DIO\\Desafio_AVANADE\\API_Vendas\\Controllers\\Controller_Usuario.cs",
+              "RelativeToolTip": "Controllers\\Controller_Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T21:37:58.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Projetos\\DIO\\Desafio_AVANADE\\API_Vendas\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Projetos\\DIO\\Desafio_AVANADE\\API_Vendas\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-08T21:23:24.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projetos\\DIO\\Desafio_AVANADE\\API_Vendas\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Projetos\\DIO\\Desafio_AVANADE\\API_Vendas\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAADwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T20:18:59.904Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

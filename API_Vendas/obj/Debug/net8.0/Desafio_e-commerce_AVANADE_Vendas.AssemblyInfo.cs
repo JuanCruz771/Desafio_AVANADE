@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Desafio_e-commerce_AVANADE_Vendas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f66a5038d273f513eeb01fd299447e3804eb0be")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a4eb34956eb854ee52ad727483920f4d40d00720")]
 [assembly: System.Reflection.AssemblyProductAttribute("Desafio_e-commerce_AVANADE_Vendas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Desafio_e-commerce_AVANADE_Vendas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
