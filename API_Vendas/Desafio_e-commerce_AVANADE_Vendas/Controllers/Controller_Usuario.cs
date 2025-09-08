@@ -1,5 +1,5 @@
-﻿using Desafio_e_commerce_AVANADE_Estoque.DAO;
-using Desafio_e_commerce_AVANADE_Estoque.Models;
+﻿using Desafio_e_commerce_AVANADE_Vendas.DAO;
+using Desafio_e_commerce_AVANADE_Vendas.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
@@ -7,7 +7,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace Desafio_e_commerce_AVANADE_Estoque.Controllers
+namespace Desafio_e_commerce_AVANADE_Vendas.Controllers
 {
     [ApiController]
     [Route("/Usuario")]
@@ -27,7 +27,7 @@ namespace Desafio_e_commerce_AVANADE_Estoque.Controllers
         public IActionResult Buscar_Usuario_Id(int id)
         {
             // TODO: Buscar o Id no banco utilizando o EF
-            var usuario = _context.Usuarios.Find(id);
+            var usuario = _context.Usuario.Find(id);
 
             // TODO: Validar o tipo de retorno. Se não encontrar a tarefa, retornar NotFound,
             if (usuario != null)
@@ -48,23 +48,23 @@ namespace Desafio_e_commerce_AVANADE_Estoque.Controllers
         public IActionResult Buscar_Todos_Usuario()
         {
             // TODO: Buscar todas as tarefas no banco utilizando o EF
-            var usuarios = _context.Usuarios.ToList();
+            var usuarios = _context.Usuario.ToList();
             return Ok(usuarios);
         }
 
         [HttpPost("Adicionar_Usuario")]
-        public IActionResult Adicionar_Usuario(Cadastro_Usuario usuario)
+        public IActionResult Adicionar_Usuario(Usuario usuario)
         {
             // TODO: Adicionar a tarefa recebida no EF e salvar as mudanças (save changes)
-            _context.Usuarios.Add(usuario);
+            _context.Usuario.Add(usuario);
             _context.SaveChanges();
             return CreatedAtAction(nameof(Buscar_Usuario_Id), new { id = usuario.id }, usuario);
         }
 
         [HttpPost("login")]
-        public IActionResult Login([FromBody] Cadastro_Usuario login)
+        public IActionResult Login([FromBody] Usuario login)
         {
-            var user = _context.Usuarios
+            var user = _context.Usuario
                 .FirstOrDefault(u => u.Senha == login.Senha && (u.Nome == login.Nome || u.Email == login.Email));
 
             if (user == null) return Unauthorized("Usuário ou senha inválidos");
