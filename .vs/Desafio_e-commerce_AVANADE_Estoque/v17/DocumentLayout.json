@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projetos\\DIO\\Desafio_AVANADE_Estoque\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Projetos\\DIO\\Desafio_AVANADE_Estoque\\Migrations\\20250904120433_Tabelas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250904120433_Tabelas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{362F924A-0426-43E1-B812-5963783A9D02}|Desafio_e-commerce_AVANADE_Estoque.csproj|d:\\projetos\\dio\\desafio_avanade_estoque\\dao\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{362F924A-0426-43E1-B812-5963783A9D02}|Desafio_e-commerce_AVANADE_Estoque.csproj|solutionrelative:dao\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{362F924A-0426-43E1-B812-5963783A9D02}|Desafio_e-commerce_AVANADE_Estoque.csproj|d:\\projetos\\dio\\desafio_avanade_estoque\\models\\cadastro_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{362F924A-0426-43E1-B812-5963783A9D02}|Desafio_e-commerce_AVANADE_Estoque.csproj|solutionrelative:models\\cadastro_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{362F924A-0426-43E1-B812-5963783A9D02}|Desafio_e-commerce_AVANADE_Estoque.csproj|d:\\projetos\\dio\\desafio_avanade_estoque\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{362F924A-0426-43E1-B812-5963783A9D02}|Desafio_e-commerce_AVANADE_Estoque.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{362F924A-0426-43E1-B812-5963783A9D02}|Desafio_e-commerce_AVANADE_Estoque.csproj|d:\\projetos\\dio\\desafio_avanade_estoque\\models\\tipo_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{362F924A-0426-43E1-B812-5963783A9D02}|Desafio_e-commerce_AVANADE_Estoque.csproj|solutionrelative:models\\tipo_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{362F924A-0426-43E1-B812-5963783A9D02}|Desafio_e-commerce_AVANADE_Estoque.csproj|d:\\projetos\\dio\\desafio_avanade_estoque\\desafio_e-commerce_avanade_estoque.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{362F924A-0426-43E1-B812-5963783A9D02}|Desafio_e-commerce_AVANADE_Estoque.csproj|solutionrelative:desafio_e-commerce_avanade_estoque.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Desafio_e-commerce_AVANADE_Estoque",
+              "DocumentMoniker": "D:\\Projetos\\DIO\\Desafio_AVANADE_Estoque\\Desafio_e-commerce_AVANADE_Estoque.csproj",
+              "RelativeDocumentMoniker": "Desafio_e-commerce_AVANADE_Estoque.csproj",
+              "ToolTip": "D:\\Projetos\\DIO\\Desafio_AVANADE_Estoque\\Desafio_e-commerce_AVANADE_Estoque.csproj",
+              "RelativeToolTip": "Desafio_e-commerce_AVANADE_Estoque.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-04T12:11:46.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20250904120433_Tabelas.cs",
+              "DocumentMoniker": "D:\\Projetos\\DIO\\Desafio_AVANADE_Estoque\\Migrations\\20250904120433_Tabelas.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250904120433_Tabelas.cs",
+              "ToolTip": "D:\\Projetos\\DIO\\Desafio_AVANADE_Estoque\\Migrations\\20250904120433_Tabelas.cs",
+              "RelativeToolTip": "Migrations\\20250904120433_Tabelas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T12:04:33.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Context.cs",
+              "DocumentMoniker": "D:\\Projetos\\DIO\\Desafio_AVANADE_Estoque\\DAO\\Context.cs",
+              "RelativeDocumentMoniker": "DAO\\Context.cs",
+              "ToolTip": "D:\\Projetos\\DIO\\Desafio_AVANADE_Estoque\\DAO\\Context.cs",
+              "RelativeToolTip": "DAO\\Context.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T11:49:51.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Cadastro_Usuario.cs",
+              "DocumentMoniker": "D:\\Projetos\\DIO\\Desafio_AVANADE_Estoque\\Models\\Cadastro_Usuario.cs",
+              "RelativeDocumentMoniker": "Models\\Cadastro_Usuario.cs",
+              "ToolTip": "D:\\Projetos\\DIO\\Desafio_AVANADE_Estoque\\Models\\Cadastro_Usuario.cs",
+              "RelativeToolTip": "Models\\Cadastro_Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T11:49:37.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Projetos\\DIO\\Desafio_AVANADE_Estoque\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Projetos\\DIO\\Desafio_AVANADE_Estoque\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-04T11:44:33.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Tipo_usuario.cs",
+              "DocumentMoniker": "D:\\Projetos\\DIO\\Desafio_AVANADE_Estoque\\Models\\Tipo_usuario.cs",
+              "RelativeDocumentMoniker": "Models\\Tipo_usuario.cs",
+              "ToolTip": "D:\\Projetos\\DIO\\Desafio_AVANADE_Estoque\\Models\\Tipo_usuario.cs",
+              "RelativeToolTip": "Models\\Tipo_usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T11:33:42.724Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
