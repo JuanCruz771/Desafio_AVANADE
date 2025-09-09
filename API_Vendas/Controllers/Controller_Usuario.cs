@@ -58,7 +58,7 @@ namespace Desafio_e_commerce_AVANADE_Vendas.Controllers
             // TODO: Adicionar a tarefa recebida no EF e salvar as mudanças (save changes)
             _context.Usuario.Add(usuario);
             _context.SaveChanges();
-            return CreatedAtAction(nameof(Buscar_Usuario_Id), new { id = usuario.id }, usuario);
+            return CreatedAtAction(nameof(Buscar_Usuario_Id), new { id = usuario.Id }, usuario);
         }
 
         [HttpPost("login")]
