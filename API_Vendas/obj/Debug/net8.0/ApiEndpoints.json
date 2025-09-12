@@ -1,5 +1,47 @@
 [
   {
+    "ContainingType": "Desafio_e_commerce_AVANADE_Vendas.Controllers.Controller_Registro_Venda",
+    "Method": "Adicionar_Registro_Venda",
+    "RelativePath": "Registro_Venda/Adicionar_Registro_Venda",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registro",
+        "Type": "Desafio_e_commerce_AVANADE_Vendas.Models.Registro_Vendas",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Desafio_e_commerce_AVANADE_Vendas.Controllers.Controller_Registro_Venda",
+    "Method": "Buscar_Registro_Venda_Id",
+    "RelativePath": "Registro_Venda/Buscar_Registro_Venda_Id",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Desafio_e_commerce_AVANADE_Vendas.Controllers.Controller_Registro_Venda",
+    "Method": "Buscar_Todos_Registro_Venda",
+    "RelativePath": "Registro_Venda/Buscar_Todos_Registro_Venda",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Desafio_e_commerce_AVANADE_Vendas.Controllers.Controller_Usuario",
     "Method": "Adicionar_Usuario",
     "RelativePath": "Usuario/Adicionar_Usuario",

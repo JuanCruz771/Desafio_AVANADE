@@ -13,8 +13,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Desafio_e_commerce_AVANADE_Vendas.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20250909105217_initialCreate")]
-    partial class initialCreate
+    [Migration("20250912113954_initialcreate")]
+    partial class initialcreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -81,12 +81,6 @@ namespace Desafio_e_commerce_AVANADE_Vendas.Migrations
                     b.Property<int>("Status_Venda")
                         .HasColumnType("integer");
 
-                    b.Property<int?>("UsuarioId")
-                        .HasColumnType("integer");
-
-                    b.Property<int?>("UsuarioId1")
-                        .HasColumnType("integer");
-
                     b.Property<decimal>("Valor_Total")
                         .HasColumnType("numeric");
 
@@ -97,10 +91,6 @@ namespace Desafio_e_commerce_AVANADE_Vendas.Migrations
                     b.HasIndex("Id_Produto");
 
                     b.HasIndex("Id_Vendedor");
-
-                    b.HasIndex("UsuarioId");
-
-                    b.HasIndex("UsuarioId1");
 
                     b.ToTable("Registro_Venda");
                 });
@@ -119,8 +109,8 @@ namespace Desafio_e_commerce_AVANADE_Vendas.Migrations
                     b.Property<string>("Cpf")
                         .HasColumnType("text");
 
-                    b.Property<DateTime>("Data_Nascimento")
-                        .HasColumnType("timestamp with time zone");
+                    b.Property<DateOnly>("Data_Nascimento")
+                        .HasColumnType("date");
 
                     b.Property<string>("Email")
                         .HasColumnType("text");
@@ -168,26 +158,11 @@ namespace Desafio_e_commerce_AVANADE_Vendas.Migrations
                         .IsRequired()
                         .HasConstraintName("FK_Registro_Vendas_Vendedor");
 
-                    b.HasOne("Desafio_e_commerce_AVANADE_Vendas.Models.Usuario", null)
-                        .WithMany("VendasComoComprador")
-                        .HasForeignKey("UsuarioId");
-
-                    b.HasOne("Desafio_e_commerce_AVANADE_Vendas.Models.Usuario", null)
-                        .WithMany("VendasComoVendedor")
-                        .HasForeignKey("UsuarioId1");
-
                     b.Navigation("Comprador");
 
                     b.Navigation("Produto");
 
                     b.Navigation("Vendedor");
-                });
-
-            modelBuilder.Entity("Desafio_e_commerce_AVANADE_Vendas.Models.Usuario", b =>
-                {
-                    b.Navigation("VendasComoComprador");
-
-                    b.Navigation("VendasComoVendedor");
                 });
 #pragma warning restore 612, 618
         }

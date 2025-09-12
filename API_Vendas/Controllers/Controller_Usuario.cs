@@ -1,5 +1,6 @@
 ﻿using Desafio_e_commerce_AVANADE_Vendas.DAO;
 using Desafio_e_commerce_AVANADE_Vendas.Models;
+using Desafio_e_commerce_AVANADE_Vendas.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
@@ -15,11 +16,13 @@ namespace Desafio_e_commerce_AVANADE_Vendas.Controllers
     {
         private readonly Context _context;
         private readonly IConfiguration _config;
+        private readonly Token_Service _tokenService;
 
-        public Controller_Usuario(Context context, IConfiguration config)
+        public Controller_Usuario(Context context, IConfiguration config, Token_Service tokenService)
         {
             _context = context;
             _config = config;
+            _tokenService = tokenService;
         }
 
         [Authorize]
@@ -65,31 +68,14 @@ namespace Desafio_e_commerce_AVANADE_Vendas.Controllers
         public IActionResult Login([FromBody] Usuario login)
         {
             var user = _context.Usuario
-                .FirstOrDefault(u => u.Senha == login.Senha && (u.Nome == login.Nome || u.Email == login.Email));
+         .FirstOrDefault(u => u.Senha == login.Senha && (u.Nome == login.Nome || u.Email == login.Email));
 
-            if (user == null) return Unauthorized("Usuário ou senha inválidos");
+            if (user == null)
+                return Unauthorized("Usuário ou senha inválidos");
 
-            var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.ASCII.GetBytes(_config["Jwt:Key"]);
+            var token = _tokenService.GenerateToken(user);
 
-            var tokenDescriptor = new SecurityTokenDescriptor
-            {
-                Subject = new ClaimsIdentity(new Claim[]
-                {
-                new Claim(ClaimTypes.Name, user.Nome),
-                new Claim(ClaimTypes.Email, user.Email),
-                new Claim("TipoUsuario", user.Tipo.ToString())
-                }),
-                Expires = DateTime.UtcNow.AddHours(2),
-                Issuer = _config["Jwt:Issuer"],
-                Audience = _config["Jwt:Audience"],
-                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
-            };
-
-            var token = tokenHandler.CreateToken(tokenDescriptor);
-            var tokenString = tokenHandler.WriteToken(token);
-
-            return Ok(new { Token = tokenString });
+            return Ok(new { Token = token });
         }
     }
 }

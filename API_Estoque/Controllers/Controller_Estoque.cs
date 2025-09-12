@@ -18,7 +18,7 @@ namespace Desafio_e_commerce_AVANADE_Estoque.Controllers
             _context = context;
         }
 
-        [HttpGet("Buscar_Produto_Id")]
+        [HttpGet("{id}")]
         public IActionResult Buscar_Produto_Id(int id)
         {
             // TODO: Buscar o Id no banco utilizando o EF

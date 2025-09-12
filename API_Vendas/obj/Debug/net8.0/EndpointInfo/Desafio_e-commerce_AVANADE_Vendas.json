@@ -5,6 +5,71 @@
     "version": "v1"
   },
   "paths": {
+    "/Registro_Venda/Buscar_Registro_Venda_Id": {
+      "get": {
+        "tags": [
+          "Controller_Registro_Venda"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Registro_Venda/Buscar_Todos_Registro_Venda": {
+      "get": {
+        "tags": [
+          "Controller_Registro_Venda"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Registro_Venda/Adicionar_Registro_Venda": {
+      "post": {
+        "tags": [
+          "Controller_Registro_Venda"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Registro_Vendas"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Registro_Vendas"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Registro_Vendas"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/Usuario/Buscar_Usuario_Id": {
       "get": {
         "tags": [
@@ -104,6 +169,91 @@
   },
   "components": {
     "schemas": {
+      "Produtos": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "codigo_interno": {
+            "type": "string",
+            "nullable": true
+          },
+          "descricao": {
+            "type": "string",
+            "nullable": true
+          },
+          "preco": {
+            "type": "number",
+            "format": "double"
+          },
+          "quantidade": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Registro_Vendas": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_Comprador": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "comprador": {
+            "$ref": "#/components/schemas/Usuario"
+          },
+          "id_Vendedor": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "vendedor": {
+            "$ref": "#/components/schemas/Usuario"
+          },
+          "id_Produto": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "produto": {
+            "$ref": "#/components/schemas/Produtos"
+          },
+          "quantidade": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "valor_Total": {
+            "type": "number",
+            "format": "double"
+          },
+          "endereço_Venda": {
+            "type": "string",
+            "nullable": true
+          },
+          "data_Venda": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "status_Venda": {
+            "$ref": "#/components/schemas/Status_Venda"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Status_Venda": {
+        "enum": [
+          1,
+          2,
+          3
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
       "Tipo_Usuario": {
         "enum": [
           1,
@@ -124,11 +274,31 @@
             "type": "string",
             "nullable": true
           },
-          "senha": {
+          "cpf": {
+            "type": "string",
+            "nullable": true
+          },
+          "genero": {
+            "type": "string",
+            "nullable": true
+          },
+          "data_Nascimento": {
+            "type": "string",
+            "format": "date"
+          },
+          "celular": {
             "type": "string",
             "nullable": true
           },
           "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "senha": {
+            "type": "string",
+            "nullable": true
+          },
+          "endereço": {
             "type": "string",
             "nullable": true
           },

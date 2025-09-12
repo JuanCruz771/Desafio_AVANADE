@@ -8,13 +8,29 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Desafio_e_commerce_AVANADE_Vendas.Migrations
 {
     /// <inheritdoc />
-    public partial class initialCreate : Migration
+    public partial class initialcreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AlterDatabase()
                 .Annotation("Npgsql:Enum:tipo_usuario", "admin,comprador,vendedor");
+
+            migrationBuilder.CreateTable(
+                name: "Produtos",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Codigo_interno = table.Column<string>(type: "text", nullable: true),
+                    Descricao = table.Column<string>(type: "text", nullable: true),
+                    Preco = table.Column<decimal>(type: "numeric", nullable: false),
+                    Quantidade = table.Column<int>(type: "integer", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Produtos", x => x.Id);
+                });
 
             migrationBuilder.CreateTable(
                 name: "Usuario",
@@ -25,7 +41,7 @@ namespace Desafio_e_commerce_AVANADE_Vendas.Migrations
                     Nome = table.Column<string>(type: "text", nullable: true),
                     Cpf = table.Column<string>(type: "text", nullable: true),
                     Genero = table.Column<string>(type: "text", nullable: true),
-                    Data_Nascimento = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    Data_Nascimento = table.Column<DateOnly>(type: "date", nullable: false),
                     Celular = table.Column<string>(type: "text", nullable: true),
                     Email = table.Column<string>(type: "text", nullable: true),
                     Senha = table.Column<string>(type: "text", nullable: true),
@@ -50,23 +66,11 @@ namespace Desafio_e_commerce_AVANADE_Vendas.Migrations
                     Valor_Total = table.Column<decimal>(type: "numeric", nullable: false),
                     Endereço_Venda = table.Column<string>(type: "text", nullable: true),
                     Data_Venda = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    Status_Venda = table.Column<int>(type: "integer", nullable: false),
-                    UsuarioId = table.Column<int>(type: "integer", nullable: true),
-                    UsuarioId1 = table.Column<int>(type: "integer", nullable: true)
+                    Status_Venda = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Registro_Venda", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Registro_Venda_Usuario_UsuarioId",
-                        column: x => x.UsuarioId,
-                        principalTable: "Usuario",
-                        principalColumn: "Id");
-                    table.ForeignKey(
-                        name: "FK_Registro_Venda_Usuario_UsuarioId1",
-                        column: x => x.UsuarioId1,
-                        principalTable: "Usuario",
-                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_Registro_Vendas_Comprador",
                         column: x => x.Id_Comprador,
@@ -101,16 +105,6 @@ namespace Desafio_e_commerce_AVANADE_Vendas.Migrations
                 name: "IX_Registro_Venda_Id_Vendedor",
                 table: "Registro_Venda",
                 column: "Id_Vendedor");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Registro_Venda_UsuarioId",
-                table: "Registro_Venda",
-                column: "UsuarioId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Registro_Venda_UsuarioId1",
-                table: "Registro_Venda",
-                column: "UsuarioId1");
         }
 
         /// <inheritdoc />

@@ -17,7 +17,7 @@ namespace Desafio_e_commerce_AVANADE_Vendas.Models
 
         // Foreign key para Produto
         public int Id_Produto { get; set; }
-        public Produtos Produto { get; set; }
+        public Produtos? Produto { get; set; }
 
         public int Quantidade { get; set; }
         public decimal Valor_Total { get; set; }

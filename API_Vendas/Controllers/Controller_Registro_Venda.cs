@@ -1,8 +1,10 @@
 ﻿using Desafio_e_commerce_AVANADE_Vendas.DAO;
 using Desafio_e_commerce_AVANADE_Vendas.Models;
+using Desafio_e_commerce_AVANADE_Vendas.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
+using Newtonsoft.Json.Linq;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -16,11 +18,13 @@ namespace Desafio_e_commerce_AVANADE_Vendas.Controllers
     {
         private readonly Context _context;
         private readonly IConfiguration _config;
+        private readonly Venda_Service _vendaService;
 
-        public Controller_Registro_Venda(Context context, IConfiguration config)
+        public Controller_Registro_Venda(Context context, IConfiguration config,Venda_Service vendaService)
         {
             _context = context;
             _config = config;
+            _vendaService = vendaService;
         }
 
         [Authorize]
@@ -57,10 +61,19 @@ namespace Desafio_e_commerce_AVANADE_Vendas.Controllers
         [HttpPost("Adicionar_Registro_Venda")]
         public IActionResult Adicionar_Registro_Venda(Registro_Vendas registro)
         {
-            // TODO: Adicionar a tarefa recebida no EF e salvar as mudanças (save changes)
+            var token = HttpContext.Request.Headers["Authorization"].ToString().Replace("Bearer", "");
+            var produto = _vendaService.Buscar_Produto_Id(registro.Id_Produto, token);
+
+            if (produto == null){
+                return NotFound("Produto não encontrado no estoque");
+            }
+            else { 
+
             _context.Registro_Venda.Add(registro);
             _context.SaveChanges();
             return CreatedAtAction(nameof(Buscar_Registro_Venda_Id), new { id = registro.Id }, registro);
+
+            }
         }
 
 

@@ -1,5 +1,6 @@
 using Desafio_e_commerce_AVANADE_Vendas.DAO;
 using Desafio_e_commerce_AVANADE_Vendas.Models;
+using Desafio_e_commerce_AVANADE_Vendas.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -8,7 +9,7 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("conexao");
-var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:Key"]);
+
 
 builder.Services.AddDbContext<Context>(options =>
     options.UseNpgsql(connectionString,
@@ -29,13 +30,22 @@ builder.Services.AddAuthentication(options =>
         ValidateAudience = true,
         ValidateLifetime = true,
         ValidateIssuerSigningKey = true,
-        ValidIssuer = builder.Configuration["Jwt:Issuer"],
-        ValidAudience = builder.Configuration["Jwt:Audience"],
-        IssuerSigningKey = new SymmetricSecurityKey(key)
+        ValidIssuer = "API_Vendas",
+        ValidAudience = "APIs_Parceiras",
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
     };
 });
 
-// Add services to the container.
+builder.Services.AddScoped<Token_Service>();
+builder.Services.AddScoped<Venda_Service>();
+
+builder.Services.AddHttpClient("API_Estoque", client =>
+{
+    client.BaseAddress = new Uri("https://localhost:7177/swagger/index.html"); // URL da sua API de Estoque
+});
+
+
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
